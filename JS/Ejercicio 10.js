@@ -1,28 +1,20 @@
+let row = parseInt(prompt('Ingrese el numero de filas: '));
+let columns = parseInt(prompt('Ingrese el numero de columnas: '));
+let total = row * columns;
 
-// const tabla = (row, columns) => {
-//   const row = parseInt(document.getElementById('filas').value);
-//   const columns = parseInt(document.getElementById('columnas').value);
-//   return filas * columnas;
-// }
+document.write('<table border>');
 
-// console.log(tabla(5, 3));
+for (let indiceFila = 0; indiceFila < row; indiceFila++) {
+  document.write('<tr>');
+  for (let indiceColumnas = 0; indiceColumnas < columns; indiceColumnas++) {
+    document.write('<td>' + total + '</td>');
+    total--;
+  }
+  document.write('</tr>')
+}
+document.write('</table>');
 
 
-//--- sentecia label
-
-// let arr1 = ['Dani', 'Fede', 'Agus'];
-// let arr2 =['Jose', 'Mary', arr1, 'Mama'];
-
-// forNombre:
-// for (let arr in arr2) {
-//   if (arr == 2) {
-//     for (let arr of arr1){
-//       continue forNombre;
-//       document.write(arr + '<br>');
-//     }
-//     } else {
-//       document.write(arr2[arr] + '<br>');
-//     }
-// }
+document.write('<tr>' + '</tr>');
 
 

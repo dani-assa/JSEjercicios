@@ -1,11 +1,19 @@
-const inputUser = parseInt(prompt('Ingrese un número del 1 al 500'));
+let f = 500;
+//let rep = 0;
 
+for (let i = 1; i <= f; i++) {
+  document.write(i);
 
-const multiplo4y9 = (nro) => {
-  nro % 4 === 0 && nro % 9 === 0;
-}
+  if (i % 4 === 0) {
+    document.write (' (Multiplo de 4)');
+  }
 
-for (let i = 0; i <= 500; i++) {
-  const multiplo = multiplo4y9(i);
-  console.log(`Número ${i}${multiplo ? ' (Múltiplo de 4 y 9)' : ''}`);
+  if (i % 9 === 0) {
+    document.write (' (Multiplo de 9');
+  }
+  document.write('<br>');
+
+  if (i % 5 === 0) {
+    document.write('<hr>')
+  }
 }
